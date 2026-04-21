@@ -106,9 +106,10 @@ export default function PatientModal({ patient, onClose, onSaved }: Props) {
               <input type="email" className={`input-field ${errors.email ? "input-error" : ""}`} placeholder="john@example.com" value={form.email} onChange={(e) => set("email", e.target.value)} />
               {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
             </div>
+            {/* Updated phone number */}
             <div className="col-span-2 sm:col-span-1">
               <label className="block text-xs font-semibold text-slate-600 mb-1.5">Phone Number *</label>
-              <input className={`input-field ${errors.phone ? "input-error" : ""}`} placeholder="+880-xxxxxxxx" value={form.phone} onChange={(e) => set("phone", e.target.value)} />
+              <input className={`input-field ${errors.phone ? "input-error" : ""}`} placeholder="+880-XXXXXXXXX" value={form.phone} onChange={(e) => set("phone", e.target.value)} />
               {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
             </div>
             <div>
