@@ -108,7 +108,7 @@ export default function PatientModal({ patient, onClose, onSaved }: Props) {
             </div>
             <div className="col-span-2 sm:col-span-1">
               <label className="block text-xs font-semibold text-slate-600 mb-1.5">Phone Number *</label>
-              <input className={`input-field ${errors.phone ? "input-error" : ""}`} placeholder="+1-555-0100" value={form.phone} onChange={(e) => set("phone", e.target.value)} />
+              <input className={`input-field ${errors.phone ? "input-error" : ""}`} placeholder="+880-xxxxxxxx" value={form.phone} onChange={(e) => set("phone", e.target.value)} />
               {errors.phone && <p className="text-red-500 text-xs mt-1">{errors.phone}</p>}
             </div>
             <div>
